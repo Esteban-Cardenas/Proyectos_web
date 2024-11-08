@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #4a90e2;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+}
+
+header a {
+        color: white;
+        margin-right: 15px;
+        text-decoration: none; /* Elimina el subrayado en los enlaces */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 70px; /* Tamaño ajustado del logo */
+    margin-right: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 0px; /* Espacio entre los elementos */
+    padding: 10px; /* Espaciado interno del navbar */
+}
+
+nav a img {
+    vertical-align: middle;
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+/* Menú principal */
+.main-menu {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.inicio {
+    color: #0044cc;
+    font-weight: bold;
+    
+}
+
+/* Estilos responsivos */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .content {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Sección principal */
+.pw_main {
+    height: calc(100vh - 500px);
+    display: flex;
+    justify-content: center; /* Asegura que los elementos estén centrados */
+    align-items: center;
+    padding: 10px;
+    flex-direction: row; /* Mantiene los elementos en una fila */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.pw_textos {
+    flex-grow: 1; /* Permite que el contenedor de texto se ajuste */
+    flex-basis: 48%; /* Ajusta el espacio del texto */
+    margin-right: 0; /* Elimina margen derecho */
+}
+
+.image-container {
+    flex-grow: 1; /* Permite que el contenedor de imagen se ajuste */
+    flex-basis: 48%; /* Ajusta el espacio de la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+.mockup {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 56px;
+    font-weight: 300;
+    color: black; /* Asegúrate de que el color sea claramente visible */
+}
+.title_active {
+    color: var(--gold1); 
+    font-weight: 700; 
+}
+.copy {
+    font-size: 24px;
+    color: var(--gray1);
+    text-shadow: var(--shadow) var(--color_shadow);
+    margin: 15px 0;
+}
+.copy_active {
+    font-weight: 700;
+}
+.cta {
+    padding: 20px 30px;
+    display: inline-block;
+    background: linear-gradient(180deg, #f7ce90 0%, #f4bd78 100%);
+    text-decoration: none;
+    color: var(--black2);
+    font-weight: 700;
+    box-shadow: var(--shadow) var(--color_shadow);
+}
+
