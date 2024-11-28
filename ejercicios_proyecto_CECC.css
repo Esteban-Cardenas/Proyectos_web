@@ -8,8 +8,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9; /* Color de fondo para todo el cuerpo */
 }
-
 
 header {
     display: flex;
@@ -21,9 +21,9 @@ header {
 }
 
 header a {
-        color: white;
-        margin-right: 15px;
-        text-decoration: none; /* Elimina el subrayado en los enlaces */
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
 }
 
 .logo {
@@ -32,36 +32,36 @@ header a {
 }
 
 .logo img {
-    max-height: 70px; /* Tamaño ajustado del logo */
+    max-height: 70px;
     margin-right: 10px;
 }
 
 nav {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    gap: 0px; /* Espacio entre los elementos */
-    padding: 10px; /* Espaciado interno del navbar */
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
 }
 
 nav a img {
     vertical-align: middle;
-    margin-right: 5px; /* Espacio entre el icono y el texto */
+    margin-right: 5px;
 }
 
-/* Menú principal */
 .main-menu {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     font-weight: bold;
+    background-color: white; /* Fondo para el título principal */
+    color: black; /* Color del texto del título principal */
 }
+
 .inicio {
     color: #0044cc;
     font-weight: bold;
-    
 }
 
-/* Estilos responsivos */
 @media (max-width: 700px) {
     .container {
         flex-direction: column;
@@ -72,26 +72,13 @@ nav a img {
     }
 }
 
-/* Sección principal */
-.pw_main {
-    height: calc(100vh - 500px);
-    display: flex;
-    justify-content: center; /* Asegura que los elementos estén centrados */
-    align-items: center;
-    padding: 10px;
-    flex-direction: row; /* Mantiene los elementos en una fila */
-    gap: 20px; /* Espacio entre elementos */
-}
-
 .pw_textos {
-    flex-grow: 1; /* Permite que el contenedor de texto se ajuste */
-    flex-basis: 48%; /* Ajusta el espacio del texto */
-    margin-right: 0; /* Elimina margen derecho */
+    flex: 1;
+    margin-right: 20px;
 }
 
 .image-container {
-    flex-grow: 1; /* Permite que el contenedor de imagen se ajuste */
-    flex-basis: 48%; /* Ajusta el espacio de la imagen */
+    flex: 1;
     display: flex;
     justify-content: center;
 }
@@ -102,30 +89,128 @@ nav a img {
 }
 
 .title {
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 300;
-    color: black; /* Asegúrate de que el color sea claramente visible */
+    color: black;
 }
+
 .title_active {
-    color: var(--gold1); 
-    font-weight: 700; 
+    color: #E9B000;
+    font-weight: 700;
 }
+
 .copy {
-    font-size: 24px;
-    color: var(--gray1);
-    text-shadow: var(--shadow) var(--color_shadow);
+    font-size: 18px;
+    color: #555;
     margin: 15px 0;
 }
+
 .copy_active {
     font-weight: 700;
 }
+
 .cta {
-    padding: 20px 30px;
-    display: inline-block;
+    padding: 10px 20px;
     background: linear-gradient(180deg, #f7ce90 0%, #f4bd78 100%);
     text-decoration: none;
-    color: var(--black2);
+    color: #000;
     font-weight: 700;
-    box-shadow: var(--shadow) var(--color_shadow);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
+.fixed-section {
+    position: fixed;
+    bottom: 0;
+    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info-section {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px auto; /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
+    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+}
+.info-section-2 {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px auto; /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
+    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+}
+
+#reloj {
+    position: absolute;
+    top: 135px; /* Ajusta la distancia desde la parte superior */
+    left: 0px; /* Ajusta la distancia desde la parte derecha */
+    font-size: 20px;
+    z-index: 10; /* Asegura que esté encima de otros elementos */
+}
+
+#diapositivas-container {
+    display: flex;
+    position: relative;
+    top: -300px; /* Ajusta este valor para mover el contenedor hacia arriba */
+    justify-content: space-evenly;
+    gap: 1200px; /* Ajusta el espacio entre las diapositivas */
+    padding: 20px; /* Añade un poco de relleno alrededor del contenedor */
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+#diapositiva, #diapositiva-2 {
+    width: 300px; /* Ajusta el ancho de las imágenes */
+    height: auto;
+}
+
+#caption {
+    margin-top: 10px;
+}
+
+.btn-ocultar {
+    all: unset;
+    padding: .4em;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: rgb(70, 70, 70);
+    background-color: #f1f1f1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.1s ease;
+}
+
+.btn-ocultar:hover {
+    cursor: pointer;
+    background-color: #e2544a;
+}
+
+.hidden {
+    background-color: #000;
+    visibility: hidden;
+}
+
+
+
 

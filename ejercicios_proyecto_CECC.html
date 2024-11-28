@@ -2,10 +2,10 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="ejercicios_proyecto_CECC.css">
+    <script src="ejercicios_proyecto_CECC.js"></script>
     <title>Carlos Esteban Cardenas Carrillo</title>
 </head>
 <body>
@@ -14,7 +14,6 @@
             <img src="logo.png" alt="logo del proyecto">
             <h2 class="nombre-proyecto">Señas para la educación</h2>
         </a>
-        <div class="links">
         <nav>
             <a href="#" class="informacion">
                 <img src="img/search-alt-regular-24.png" alt="link"> Acerca De
@@ -26,22 +25,53 @@
                 <img src="img/phone-regular-24.png" alt="link"> Contacto
             </a>
             <a href="#" class="inicio">
-                <img src="img/door-open-solid-24.png" alt="link" style="vertical-align: middle;"> Login
+                <img src="img/door-open-solid-24.png" alt="link"> Login
             </a>
         </nav>
-        </div>
     </header>
     
     <h1 class="main-menu">Lenguaje de señas</h1>
-<section class="container pw_main">
-    <div class="pw_textos">
-        <h1 class="title">Tú mejor <span class="title_active">Experiencia en leguaje de señas</span></h1>
-        <p class="copy">Nos encargamos de llevar tu conocimiento al siguiente nivel</p>
-        <a href="#" class="cta">Descarga nuestra aplicación</a>
+
+    <section class="info-section"> 
+        <p>La Lengua de Señas Mexicana (LSM) es el idioma natural de la comunidad sorda en México, compuesto por una gramática visual y expresiones faciales únicas. 
+        Su oficialización en 2003 como lengua nacional, junto con el español y las lenguas indígenas, ha facilitado la inclusión educativa. 
+        Además, la normativa de 2018 exige que la televisión en gran parte del país incluya LSM o subtítulos, promoviendo la accesibilidad.</p>
+    </section>
+
+    <section class="info-section-2"> 
+        <p>La Lengua de Señas Mexicana (LSM) es la lengua utilizada por las personas sordas en México. 
+            Posee su propia estructura gramatical, léxico y sintaxis. Esta lengua es esencial para la comunicación, desarrollo y expresión de pensamientos y emociones de quienes tienen discapacidad auditiva. 
+            Aunque permite la interacción entre personas sordas, puede dificultar la comunicación con quienes no dominan esta lengua. 
+            El CONADIS trabaja para promover una sociedad más inclusiva, reconociendo la importancia de la LSM para la integración social, educativa y profesional de las personas sordas.</p>
+    </section>
+
+    <div id="reloj" style="font-size: 20px; margin: 20px;"></div>
+    <div id="diapositivas-container">
+        <figure>
+            <img id="diapositiva" src="img/gracias.png" alt="Diapositiva 1" />
+            <figcaption id="caption">Gracias</figcaption>
+        </figure>
+        <figure>
+            <img id="diapositiva-2" src="img/Como-estas.png" alt="Diapositiva 2" />
+            <figcaption id="caption-2">¿Como estas?</figcaption>
+        </figure>
     </div>
-    <div class="image-container">
-        <img src="img/Captura de pantalla 2024-11-07 165920.png" class="mockup">
-    </div>
-</section>
+
+    <section class="fixed-section">
+        <button class="btn-ocultar" onclick="ocultarBoton()"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+            viewBox="0 -960 960 960" width="24px" fill="#000">
+            <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg></button>
+        <div class="pw_textos">
+            <h1 class="title">Tú mejor <span class="title_active">Experiencia en leguaje de señas</span></h1>
+            <p class="copy">Nos encargamos de llevar tu conocimiento al siguiente nivel</p>
+            <a href="#" class="cta">Descarga nuestra aplicación</a>
+        </div>
+        <div class="image-container">
+            <img src="img/Captura de pantalla 2024-11-07 165920.png" class="mockup" alt="Captura de pantalla de la aplicación">
+        </div>
+    </section>
 </body>
 </html>
+
