@@ -162,6 +162,16 @@ nav a img {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
     width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
 }
+.info-section-4 {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px auto; /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
+    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+}
 #reloj {
     position: absolute;
     top: 135px; /* Ajusta la distancia desde la parte superior */
@@ -173,7 +183,7 @@ nav a img {
 #diapositivas-container {
     display: flex;
     position: relative;
-    top: -100px; /* Ajusta este valor para mover el contenedor hacia arriba */
+    top: -190px; /* Ajusta este valor para mover el contenedor hacia arriba */
     justify-content: space-evenly;
     gap: 1200px; /* Ajusta el espacio entre las diapositivas */
     padding: 20px; /* Añade un poco de relleno alrededor del contenedor */
@@ -259,6 +269,26 @@ figure {
 .indice_5 a:active {
     background-color: #003366; /* Fondo más oscuro cuando se hace clic */
 }
+footer {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
 
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #0097a7;
+    text-decoration: underline;
+}
+#inicio_main {
+    scroll-margin-top: 50px; /* Ajusta según el tamaño del header fijo */
+}
 
 

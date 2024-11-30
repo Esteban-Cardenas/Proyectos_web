@@ -68,3 +68,10 @@ function ocultarBoton() {
         anuncio.classList.add('hidden');
     }
 }
+
+    document.querySelector('a[href="#inicio"]').addEventListener('click', function(e) {
+        e.preventDefault(); // Prevenir la acción predeterminada del enlace
+        document.getElementById('inicio').scrollIntoView({
+            behavior: 'smooth' // Desplazamiento suave
+        });
+    });
