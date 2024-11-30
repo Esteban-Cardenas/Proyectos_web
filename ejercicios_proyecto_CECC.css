@@ -152,7 +152,16 @@ nav a img {
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
     width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
 }
-
+.info-section-3 {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin: 20px auto; /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
+    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+}
 #reloj {
     position: absolute;
     top: 135px; /* Ajusta la distancia desde la parte superior */
@@ -164,7 +173,7 @@ nav a img {
 #diapositivas-container {
     display: flex;
     position: relative;
-    top: -300px; /* Ajusta este valor para mover el contenedor hacia arriba */
+    top: -100px; /* Ajusta este valor para mover el contenedor hacia arriba */
     justify-content: space-evenly;
     gap: 1200px; /* Ajusta el espacio entre las diapositivas */
     padding: 20px; /* Añade un poco de relleno alrededor del contenedor */
@@ -210,7 +219,46 @@ figure {
     background-color: #000;
     visibility: hidden;
 }
+.indice_5 {
+    background-color: #f4f4f9; /* Fondo suave */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
+    width: 250px; /* Ancho fijo para el índice */
+    margin: 20px 0; /* Solo margen superior e inferior, sin centrar */
+    font-family: 'Arial', sans-serif; /* Fuente más legible */
+    position: absolute; /* Usamos posición absoluta para moverlo libremente */
+    left: 25px; /* Pegado a la izquierda de la página */
+    top: 170px; /* Ajusta la distancia desde la parte superior */
+}
 
+/* Estilo para los enlaces dentro de la sección */
+.indice_5 a {
+    display: block; /* Cada enlace ocupa una línea */
+    color: #0044cc; /* Color del texto del enlace */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 10px 15px; /* Relleno alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    margin-bottom: 10px; /* Espacio entre los enlaces */
+    font-size: 18px; /* Tamaño de la fuente */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+}
+
+/* Efecto cuando el mouse pasa sobre el enlace (hover) */
+.indice_5 a:hover {
+    background-color: #0044cc; /* Fondo azul cuando el mouse pasa */
+    color: #ffffff; /* Color del texto cuando se pasa el mouse */
+}
+
+/* Efecto cuando el enlace es visitado */
+.indice_5 a:visited {
+    color: #800080; /* Color morado para los enlaces visitados */
+}
+
+/* Efecto cuando el enlace está activo (haciendo clic) */
+.indice_5 a:active {
+    background-color: #003366; /* Fondo más oscuro cuando se hace clic */
+}
 
 
 
