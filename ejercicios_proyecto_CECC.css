@@ -1,3 +1,11 @@
+/* Propiedades personalizada */
+:root {
+    /* Colores */
+    --azul-principal: #4a90e2;
+    --azul-oscuro: #1d5fac;
+    --blanco: #fff;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
@@ -8,13 +16,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f9f9f9; /* Color de fondo para todo el cuerpo */
+    background-color: #f9f9f9;
+    /* Color de fondo para todo el cuerpo */
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: #4a90e2;
+    background-color: var(--azul-principal);
     justify-content: space-between;
     padding: 10px;
     color: white;
@@ -53,20 +62,19 @@ nav a img {
     padding: 10px;
     text-align: center;
     font-weight: bold;
-    background-color: white; /* Fondo para el título principal */
-    color: black; /* Color del texto del título principal */
-}
-
-.inicio {
-    color: #0044cc;
-    font-weight: bold;
+    background-color: white;
+    /* Fondo para el título principal */
+    color: black;
+    /* Color del texto del título principal */
 }
 
 @media (max-width: 700px) {
     .container {
         flex-direction: column;
     }
-    .sidebar, .content {
+
+    .sidebar,
+    .content {
         width: 100%;
         margin-bottom: 10px;
     }
@@ -117,10 +125,12 @@ nav a img {
     font-weight: 700;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .fixed-section {
     position: fixed;
     bottom: 0;
-    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    width: 60%;
+    /* Reduce el ancho del texto para hacerlo más estrecho */
     background-color: white;
     z-index: 1000;
     padding: 20px;
@@ -138,55 +148,77 @@ nav a img {
     text-align: center;
     font-size: 18px;
     color: #333;
-    margin: 20px auto; /* Espacio entre las secciones y centrado */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
-    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    margin: 20px auto;
+    /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para consistencia visual */
+    width: 60%;
+    /* Reduce el ancho del texto para hacerlo más estrecho */
 }
+
 .info-section-2 {
     padding: 20px;
     background-color: #ffffff;
     text-align: center;
     font-size: 18px;
     color: #333;
-    margin: 20px auto; /* Espacio entre las secciones y centrado */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
-    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    margin: 20px auto;
+    /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para consistencia visual */
+    width: 60%;
+    /* Reduce el ancho del texto para hacerlo más estrecho */
 }
+
 .info-section-3 {
     padding: 20px;
     background-color: #ffffff;
     text-align: center;
     font-size: 18px;
     color: #333;
-    margin: 20px auto; /* Espacio entre las secciones y centrado */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
-    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    margin: 20px auto;
+    /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para consistencia visual */
+    width: 60%;
+    /* Reduce el ancho del texto para hacerlo más estrecho */
 }
+
 .info-section-4 {
     padding: 20px;
     background-color: #ffffff;
     text-align: center;
     font-size: 18px;
     color: #333;
-    margin: 20px auto; /* Espacio entre las secciones y centrado */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para consistencia visual */
-    width: 60%; /* Reduce el ancho del texto para hacerlo más estrecho */
+    margin: 20px auto;
+    /* Espacio entre las secciones y centrado */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra para consistencia visual */
+    width: 60%;
+    /* Reduce el ancho del texto para hacerlo más estrecho */
 }
+
 #reloj {
     position: absolute;
-    top: 135px; /* Ajusta la distancia desde la parte superior */
-    left: 0px; /* Ajusta la distancia desde la parte derecha */
+    top: 135px;
+    /* Ajusta la distancia desde la parte superior */
+    left: 0px;
+    /* Ajusta la distancia desde la parte derecha */
     font-size: 20px;
-    z-index: 10; /* Asegura que esté encima de otros elementos */
+    z-index: 10;
+    /* Asegura que esté encima de otros elementos */
 }
 
 #diapositivas-container {
     display: flex;
     position: relative;
-    top: -190px; /* Ajusta este valor para mover el contenedor hacia arriba */
+    top: -190px;
+    /* Ajusta este valor para mover el contenedor hacia arriba */
     justify-content: space-evenly;
-    gap: 1200px; /* Ajusta el espacio entre las diapositivas */
-    padding: 20px; /* Añade un poco de relleno alrededor del contenedor */
+    gap: 1200px;
+    /* Ajusta el espacio entre las diapositivas */
+    padding: 20px;
+    /* Añade un poco de relleno alrededor del contenedor */
 }
 
 figure {
@@ -194,8 +226,10 @@ figure {
     text-align: center;
 }
 
-#diapositiva, #diapositiva-2 {
-    width: 300px; /* Ajusta el ancho de las imágenes */
+#diapositiva,
+#diapositiva-2 {
+    width: 300px;
+    /* Ajusta el ancho de las imágenes */
     height: auto;
 }
 
@@ -229,46 +263,70 @@ figure {
     background-color: #000;
     visibility: hidden;
 }
+
 .indice_5 {
-    background-color: #f4f4f9; /* Fondo suave */
-    padding: 20px; /* Espacio interno */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle profundidad */
-    width: 250px; /* Ancho fijo para el índice */
-    margin: 20px 0; /* Solo margen superior e inferior, sin centrar */
-    font-family: 'Arial', sans-serif; /* Fuente más legible */
-    position: absolute; /* Usamos posición absoluta para moverlo libremente */
-    left: 25px; /* Pegado a la izquierda de la página */
-    top: 170px; /* Ajusta la distancia desde la parte superior */
+    background-color: #f4f4f9;
+    /* Fondo suave */
+    padding: 20px;
+    /* Espacio interno */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para darle profundidad */
+    width: 250px;
+    /* Ancho fijo para el índice */
+    margin: 20px 0;
+    /* Solo margen superior e inferior, sin centrar */
+    font-family: 'Arial', sans-serif;
+    /* Fuente más legible */
+    position: absolute;
+    /* Usamos posición absoluta para moverlo libremente */
+    left: 25px;
+    /* Pegado a la izquierda de la página */
+    top: 170px;
+    /* Ajusta la distancia desde la parte superior */
 }
 
 /* Estilo para los enlaces dentro de la sección */
 .indice_5 a {
-    display: block; /* Cada enlace ocupa una línea */
-    color: #0044cc; /* Color del texto del enlace */
-    text-decoration: none; /* Quitar subrayado */
-    padding: 10px 15px; /* Relleno alrededor del texto */
-    border-radius: 5px; /* Bordes redondeados para los enlaces */
-    margin-bottom: 10px; /* Espacio entre los enlaces */
-    font-size: 18px; /* Tamaño de la fuente */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+    display: block;
+    /* Cada enlace ocupa una línea */
+    color: #0044cc;
+    /* Color del texto del enlace */
+    text-decoration: none;
+    /* Quitar subrayado */
+    padding: 10px 15px;
+    /* Relleno alrededor del texto */
+    border-radius: 5px;
+    /* Bordes redondeados para los enlaces */
+    margin-bottom: 10px;
+    /* Espacio entre los enlaces */
+    font-size: 18px;
+    /* Tamaño de la fuente */
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave para el cambio de color */
 }
 
 /* Efecto cuando el mouse pasa sobre el enlace (hover) */
 .indice_5 a:hover {
-    background-color: #0044cc; /* Fondo azul cuando el mouse pasa */
-    color: #ffffff; /* Color del texto cuando se pasa el mouse */
+    background-color: #0044cc;
+    /* Fondo azul cuando el mouse pasa */
+    color: #ffffff;
+    /* Color del texto cuando se pasa el mouse */
 }
 
 /* Efecto cuando el enlace es visitado */
 .indice_5 a:visited {
-    color: #800080; /* Color morado para los enlaces visitados */
+    color: #800080;
+    /* Color morado para los enlaces visitados */
 }
 
 /* Efecto cuando el enlace está activo (haciendo clic) */
 .indice_5 a:active {
-    background-color: #003366; /* Fondo más oscuro cuando se hace clic */
+    background-color: #003366;
+    /* Fondo más oscuro cuando se hace clic */
 }
+
 footer {
     text-align: center;
     margin: 20px 0;
@@ -287,8 +345,47 @@ footer a:hover {
     color: #0097a7;
     text-decoration: underline;
 }
+
 #inicio_main {
-    scroll-margin-top: 50px; /* Ajusta según el tamaño del header fijo */
+    scroll-margin-top: 50px;
+    /* Ajusta según el tamaño del header fijo */
 }
 
+.enlace {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
 
+.enlace svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-right: 10px;
+}
+
+.inicio {
+    /* color: #0044cc; */
+    background-color: white;
+    padding: 10px;
+    color: var(--azul-principal);
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color .2s ease;
+}
+
+.inicio:hover {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    transition: background-color .2s ease;
+}
+
+.inicio:hover svg {
+    fill: var(--blanco);
+    transition: fill .2s ease;
+}
+
+.inicio svg {
+    transition: fill .2s ease;
+    fill: var(--azul-principal);
+}
