@@ -18,6 +18,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
     /* Color de fondo para todo el cuerpo */
+    position: relative;
 }
 
 header {
@@ -211,8 +212,10 @@ nav a img {
 
 #diapositivas-container {
     display: flex;
-    position: relative;
-    top: -740px;
+    position: absolute;
+    top: 148px;
+    right: 20px;
+    
     /* Ajusta este valor para mover el contenedor hacia arriba */
     justify-content: right;
     flex-direction: column;
@@ -221,7 +224,7 @@ nav a img {
     /* Ajusta el espacio entre las diapositivas */
     padding: 20px;
     /* Añade un poco de relleno alrededor del contenedor */
-    z-index: -3;
+    z-index: 3;
 }
 
 figure {
